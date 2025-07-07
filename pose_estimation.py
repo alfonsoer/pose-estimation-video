@@ -59,7 +59,7 @@ width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 #Scale the output
-scale = 0.25
+scale = 0.50
 new_width = int(width * scale)
 new_height = int(height * scale)
 
@@ -76,12 +76,17 @@ KEYPOINT_NAMES = {
     5: "Left Shoulder",
     6: "Right Shoulder"
 }
+frame_count = 0
+# max_frames = 224  # ← Número máximo de frames a procesar
 
-while cap.isOpened():
+
+while cap.isOpened()  :
     ret, frame = cap.read()
     if not ret:
         break
-
+    
+    frame_count += 1  # ← Incrementa el contador
+    
     #Inference with YOLOv8-Pose
     results = model(frame)
     annotated_frame = results[0].plot()
@@ -96,7 +101,7 @@ while cap.isOpened():
                     label,
                     (int(x), int(y) - 10),                # Posición más alta para que no tape el punto
                     cv2.FONT_HERSHEY_SIMPLEX,
-                    1.1,                                  # tamaño del texto  
+                    1.5,                                  # tamaño del texto  
                     (0, 255, 0),                          # color verde
                     2,                                    #grosor de línea 
                     cv2.LINE_AA
