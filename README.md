@@ -5,6 +5,12 @@ This project demonstrates **human pose estimation** on video using the **YOLOv8-
 
 ---
 ## Output
+
+![image](https://github.com/user-attachments/assets/8c5e734d-8a69-4c71-8364-a9b27ed62382)
+
+[<img src="https://github.com/user-attachments/assets/8c5e734d-8a69-4c71-8364-a9b27ed62382" width="50%">](https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4)
+
+
 [![Watch the video]([https://i.sstatic.net/Vp2cE.png](https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4))]([https://youtu.be/vt5fpE0bzSY](https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4))
 
 <video src="https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4" width="352" height="720"></video>
