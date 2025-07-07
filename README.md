@@ -7,7 +7,7 @@ This project demonstrates **human pose estimation** on video using the **YOLOv8-
 ## Output
 [![Watch the video]([https://i.sstatic.net/Vp2cE.png](https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4))]([https://youtu.be/vt5fpE0bzSY](https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4))
 
-<video src="[https://github.com/user-attachments/assets/d0c3580a-7cbc-4ab1-ad04-42d4e35166bc](https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4)" width="352" height="720"></video>
+<video src="https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4" width="352" height="720"></video>
 ## 📌 Key Features
 
 - ✅ Uses **YOLOv8-Pose** for fast and accurate 2D pose estimation
@@ -25,7 +25,7 @@ pip install ultralytics opencv-python
 ```
 
 
-## 📁 Directory Structure
+## 📁 Directory structure
 ##
 ```
 project/
@@ -38,7 +38,7 @@ project/
 └── README.md                    # This file
 ```
 
-## 🧠 Keypoints Used
+## 🧠 Keypoints used
 ```
 We annotate the following keypoints using COCO format indices:
 Index	Name
@@ -48,7 +48,7 @@ Index	Name
 5	Left Shoulder
 6	Right Shoulder
 ```
-## ▶️ Run the Script
+## ▶️ Run the script
 ```
 python pose_estimation.py
 ```
@@ -64,7 +64,7 @@ The script will:
 
     Save it as output/annotated_rescaled.mp4
 
-## ⚙️ Configuration Options
+## ⚙️ Configuration options
 ```
 Inside pose_estimation.py, you can modify:
 Variable	Description	Example
@@ -73,7 +73,9 @@ fontScale	Size of keypoint labels (text)	1.0
 thickness	Thickness of the label text outline	2
 KEYPOINT_NAMES	Dictionary of keypoints to annotate	Customizable
 ```
-# 📝 Example Output (Frame)
+# 📝 Example output (Frame)
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://github.com/alfonsoer/pose-estimation-video/blob/main/output/annotated_cottonbro_studio.mp4)
+
 
 
 Note: this is a placeholder image – replace with your own frame if desired.
@@ -83,7 +85,7 @@ Note: this is a placeholder image – replace with your own frame if desired.
 
     COCO Keypoints Format
 ```
-## 🧠 Future Work Ideas
+## 🧠 Future wWork ideas
 ```
     Export keypoints to .csv for statistical analysis
 
@@ -91,7 +93,7 @@ Note: this is a placeholder image – replace with your own frame if desired.
 
     Apply on webcam stream in real time
 ```
-## 📸 Sample Video Source
+## 📸 Sample video source
 
 You can download royalty-free, high-quality videos featuring people from:
 ```
